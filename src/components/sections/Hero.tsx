@@ -33,14 +33,14 @@ export function Hero() {
                         </div>
 
                         <div className="font-display font-medium leading-none mb-10">
-                            <TextReveal as="h1" className="flex flex-col gap-2">
-                                <span className="block text-white text-5xl md:text-7xl lg:text-8xl tracking-tight uppercase font-bold">
+                            <h1 className="flex flex-col gap-2">
+                                <TextReveal as="span" className="block text-white text-5xl md:text-7xl lg:text-8xl tracking-tight uppercase font-bold">
                                     Justicia con
-                                </span>
-                                <span className="block text-[#D4AF37] text-5xl md:text-7xl lg:text-8xl tracking-tight uppercase font-bold md:ml-24">
+                                </TextReveal>
+                                <TextReveal as="span" className="block text-[#D4AF37] text-5xl md:text-7xl lg:text-8xl tracking-tight uppercase font-bold md:ml-24">
                                     Resultados
-                                </span>
-                            </TextReveal>
+                                </TextReveal>
+                            </h1>
                         </div>
                     </motion.div>
 
