@@ -1,0 +1,77 @@
+export const config = {
+    // Unique Client ID for this Landing Page
+    landingClientId: "30727c70-d179-4f1d-ab7b-61d5275c1f31",
+    // Supabase Configuration
+    supabase: {
+        url: import.meta.env.VITE_SUPABASE_URL,
+        anonKey: import.meta.env.VITE_SUPABASE_ANON_KEY,
+    },
+
+    // External Links
+    bookingUrl: "#contact",
+    paymentLink: "https://buy.stripe.com/",
+    googleMapsReviewUrl: "https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID",
+
+    // Dynamic Content (Architecture of Persuasion)
+    dynamicContent: {
+        city: "Veracruz",
+        localAnchor: "Frente al Tribunal Superior de Justicia",
+        stats: {
+            casesWon: 1250,
+            experienceYears: 23,
+            recoveredAmount: "15.4" // In millions
+        },
+        specialization: {
+            title: "Corporativa", // Penal, Corporativo, Familia
+            pain: "Incertidumbre Patrimonio",
+            ego: "Protección de Legado",
+            hook: "Defensa Estratégica"
+        },
+        roadmap: [
+            { step: "01", title: "Diagnóstico", desc: "Evaluación de Caso 24h con análisis de viabilidad técnica." },
+            { step: "02", title: "Estrategia", desc: "Diseño de Defensa a Medida alineada a sus objetivos patrimoniales." },
+            { step: "03", title: "Resolución", desc: "Protección en Tribunales con ejecución técnica implacable." }
+        ],
+        pricing: {
+            basic: "Asesoría Básica: Inversión desde $3,500 MXN",
+            comprehensive: "Defensa Integral: Inversión según complejidad",
+            retainer: "Iguala Mensual: Seguridad Legal Permanente"
+        }
+    },
+
+    // Real Testimonials Data
+    testimonials: [
+        {
+            name: "Jose Luis Pinzon Pucheta",
+            role: "Local Guide",
+            text: "Muy grata experiencia. Su equipo demostró gran profesionalismo... resolvieron mi caso de manera eficiente.",
+            tags: ["Eficiencia", "Trato Humano"]
+        },
+        {
+            name: "Dhalia Lois",
+            role: "Cliente Verificada",
+            text: "Gente amable, profesional... me ayudó con la asesoría que me dieron para llevar mi caso sin problema.",
+            tags: ["Asesoría Clara"]
+        },
+        {
+            name: "Karina",
+            role: "Cliente Verificada",
+            text: "Excelente servicio... Atención 100% personalizada y aclaran todas tus dudas!",
+            tags: ["Personalización"]
+        },
+        {
+            name: "Gabriel Rafael Cuevas",
+            role: "Cliente Verificado",
+            text: "Me despacharon bien y legal 10/10.",
+            tags: ["Resultado Directo"]
+        }
+    ],
+
+    // Demo User Data
+    demoUser: {
+        name: "Cliente Potencial",
+        email: "cliente@demo.com",
+        whatsapp: "+520000000000"
+    },
+
+};
